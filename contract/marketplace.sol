@@ -70,7 +70,7 @@ contract Marketplace {
             products[_index].sold
         );
     }
-    
+
     function buyProduct(uint _index) public payable  {
         require(
           IERC20Token(cUsdTokenAddress).transferFrom(
